@@ -1,5 +1,5 @@
 --
---    Copyright 2009-2018 the original author or authors.
+--    Copyright 2009-2022 the original author or authors.
 --
 --    Licensed under the Apache License, Version 2.0 (the "License");
 --    you may not use this file except in compliance with the License.
@@ -46,13 +46,13 @@ CREATE TABLE extensive_subject (
   aTimestamp TIMESTAMP
 );
 
-INSERT INTO subject VALUES
-  (1, 'a', 10, 100, 45, 1, CURRENT_TIMESTAMP),
-  (2, 'b', 10, NULL, 45, 1, CURRENT_TIMESTAMP),
-  (2, 'c', 10, NULL, NULL, 0, CURRENT_TIMESTAMP);
-
-INSERT INTO extensive_subject
-VALUES
-  (1, 1, 'a', 1, 1, 1, 1.0, 1, 'a', 'AVALUE', 'ACLOB', 'aaaaaabbbbbb', CURRENT_TIMESTAMP),
-  (2, 2, 'b', 2, 2, 2, 2.0, 2, 'b', 'BVALUE', 'BCLOB', '010101010101', CURRENT_TIMESTAMP),
-  (3, 3, 'c', 3, 3, 3, 3.0, 3, 'c', 'CVALUE', 'CCLOB', '777d010078da', CURRENT_TIMESTAMP);
+-- INSERT INTO subject VALUES
+--   (1, 'a', 10, 100, 45, 1, CURRENT_TIMESTAMP),
+--   (2, 'b', 10, NULL, 45, 1, CURRENT_TIMESTAMP),
+--   (2, 'c', 10, NULL, NULL, 0, CURRENT_TIMESTAMP);
+--
+-- INSERT INTO extensive_subject
+-- VALUES
+--   (1, 1, 'a', 1, 1, 1, 1.0, 1, 'a', 'AVALUE', 'ACLOB', 'aaaaaabbbbbb', CURRENT_TIMESTAMP),
+--   (2, 2, 'b', 2, 2, 2, 2.0, 2, 'b', 'BVALUE', 'BCLOB', '010101010101', CURRENT_TIMESTAMP),
+--   (3, 3, 'c', 3, 3, 3, 3.0, 3, 'c', 'CVALUE', 'CCLOB', '777d010078da', CURRENT_TIMESTAMP);
