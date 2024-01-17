@@ -225,6 +225,7 @@ public class XPathParser {
   }
 
   public XNode evalNode(Object root, String expression) {
+    // 解析Node节点
     Node node = (Node) evaluate(expression, root, XPathConstants.NODE);
     if (node == null) {
       return null;
